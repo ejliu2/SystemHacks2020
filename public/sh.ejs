@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="sh.css">
+  <script type="text/javascript" src="../public/js/sh.js"></script>
+  <title>Second Hand Checker</title>
+  
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Second Hand Search</h1>
+            <h2>Type in your product here</h2>
+            <div class="search-box">
+                <div class="search-icon"><a href="results.ejs"></a><i class="fa fa-search-plus" ></i></a></div>
+                <form id="form" action="/submit" method="post">
+                    <input type = "text" type="submit" name=searchProduct placeholder="Search" id="search" autocomplete="off">
+                    <!-- <input type="submit" value="Send Request"> -->
+                </form>
+                <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
+                 xml:space="preserve">
+              <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
+              <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
+            </svg>
+                <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+            </div>
+    
+        </div>
+    </main>
+
+    <script>
+        var input = document.getElementById("myInput");
+        input.addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+           event.preventDefault();
+           document.getElementById("myBtn").click();
+          }
+        });
+    </script>
+</body>
+</html>
